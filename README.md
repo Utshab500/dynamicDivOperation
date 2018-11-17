@@ -1,4 +1,4 @@
-# dynamicDivOperation
+# Dynamic Div Operation
 A small simple dedicated plugin which helps to work with dynamic &lt;div> content
 
 This code is focused of the <code>.modther</code> <code>.child</code> class. We often need to add dynamic form for users to input data.
