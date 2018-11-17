@@ -1,0 +1,120 @@
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <i class="fa fa-circle m-l-5 text-pink"></i>
+            <a class='btn btn-primary btn-sm pull-right firAccused update' style="cursor: pointer;"><i class="glyphicon glyphicon-edit"></i> Update</a>
+            <a class='cancel btn btn-danger btn-sm pull-right' style="cursor: pointer;" hidden><i class="glyphicon glyphicon-remove"></i></a>
+            <br />
+            <br />
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 readonly mother">   
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 child">
+                <form class="firVictims">
+                    <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 form-group">
+                        <label>Sl No.</label>
+                        <input type="text" name="SLNO" class="form-control number readonly-input col-sm-12 col-xs-12" value="1" placeholder="">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group">
+                        <label>Name of Accused</label>
+                        <input type="text" name="NAME_ACCUSED" class="form-control col-sm-12 col-xs-12" value="test" placeholder="">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 form-group">
+                        <label>Alias</label>
+                        <input type="text" name="ALIAS1" class="form-control col-sm-12 col-xs-12" value="test" placeholder="">
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 form-group">
+                        <label>Age</label>
+                        <input type="text" name="AGE_ACCUSED" class="form-control number col-sm-12 col-xs-12" value="test" placeholder="">
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 form-group">
+                        <label>Sex</label>
+                        <select name="SEX_ACCUSED" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-control">
+                            <option>select</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 form-group">
+                        <label>Father/Husband</label>
+                        <select name="FATHER_HUSBAND" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-control">
+                            <option>select</option>
+                            <option value="Father">Father</option>
+                            <option value="Husband">Husband</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 form-group">
+                        <label>Father/Husband's Name</label>
+                        <input type="text" name="FATHER_ACCUSED" class="form-control col-sm-12 col-xs-12" value="" placeholder="">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 form-group">
+                        <label>Nationality</label>
+                        <select name="NATIONALITY" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-control">
+                            <option>select</option>
+                                <option value="Indian">Indian</option>                        
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 form-group">
+                        <label>Religion</label>
+                        <select name="RELIGION" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-control">
+                            <option>select</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Christian">Christian</option>
+
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 form-group">
+                        <label>Caste</label>
+                        <select name="SC_ST_OBC" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-control">
+                            <option>select</option>
+                                <option value="gen">General</option>
+                                <option value="sc">SC</option>
+                                <option value="obc">OBC</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 form-group">
+                        <label>Occupation</label>
+                        <select name="OCCUPATION" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-control">
+                            <option>select</option>
+                                <option value="Job">Job</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 form-group">
+                        <label>ID Type</label>
+                        <select name="IDTYPE" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-control">
+                            <option>select</option>
+                            <option value="PAN">PAN</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 form-group">
+                        <label>ID Number</label>
+                        <input type="text" name="IDNO" class="form-control col-sm-12 col-xs-12" value="1232" placeholder="">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                        <label>Address</label>
+                        <textarea name="ADDR_ACCUSED" class="form-control col-xs-12">Address</textarea>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right form-group">
+                        <a class="btn btn-sm btn-rounded btn-success my-add"><i class="glyphicon glyphicon-plus-sign"></i></a>
+                        <a class="btn btn-sm btn-rounded btn-danger my-del"><i class="glyphicon glyphicon-minus-sign"></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script
+src="https://code.jquery.com/jquery-2.2.4.js"
+integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="addDelete.js"></script>
+<script type="text/javascript" src="formDataFetch.js"></script>
